@@ -14,7 +14,7 @@ body {
 .title {
   text-align: center;
   font-size: 3.8rem;
-  font-family: 'Krub', sans-serif;
+  font-family: "Krub", sans-serif;
 }
 .title span {
   font-size: 2rem;
@@ -25,6 +25,9 @@ body {
 }
 .nav-bg {
   background-color: var(--secondary);
+  padding: 1rem;
 }
-.main-nav {
+.main-nav a {
+  color: var(--white);
+  text-decoration: none;
 }
