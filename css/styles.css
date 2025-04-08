@@ -10,11 +10,11 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: "Krub", sans-serif;
 }
 .title {
   text-align: center;
   font-size: 3.8rem;
-  font-family: "Krub", sans-serif;
 }
 .title span {
   font-size: 2rem;
@@ -27,11 +27,17 @@ body {
   background-color: var(--secondary);
 }
 .main-nav {
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
 }
 .main-nav a {
   color: var(--white);
   text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.main-nav a:hover {
+  background-color: var(--primary);
+  color: var(--black);
 }
