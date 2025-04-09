@@ -135,3 +135,24 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1rem;
 }
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service h3 {
+  color: var(--secondary);
+  font-weight: normal;
+}
+.service p {
+  line-height: 2;
+}
+.service .icons {
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
