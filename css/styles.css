@@ -133,4 +133,5 @@ h3 {
 .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
 }
