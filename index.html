@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abel Beltrán - Freelancer</title>
+    <link rel="preload" href="./css/normalize.css" as="style" />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet" />
@@ -14,12 +16,14 @@
     <header>
       <h1 class="title">Abel Beltrán <span>Freelancer</span></h1>
     </header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About Me</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
+    <div class="nav-bg">
+      <nav class="main-nav container">
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
     <section>
       <h2>Freelancer Design & Web Development</h2>
       <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 24 24" fill="none" stroke="#ffc107" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">

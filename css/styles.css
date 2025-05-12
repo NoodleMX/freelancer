@@ -19,3 +19,12 @@ body {
 .title span {
   font-size: 2rem;
 }
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.main-nav {
+}
+.nav-bg {
+  background-color: var(--secondary);
+}
