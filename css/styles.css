@@ -35,7 +35,6 @@ body {
   .main-nav {
     flex-direction: row;
   }
-  
 }
 .main-nav a {
   display: block;
@@ -49,4 +48,9 @@ body {
 .main-nav a:hover {
   background-color: var(--primary);
   color: var(--black);
+}
+.hero {
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
