@@ -28,9 +28,18 @@ body {
 }
 .main-nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
+@media (min-width: 480px) {
+  .main-nav {
+    flex-direction: row;
+  }
+  
+}
 .main-nav a {
+  display: block;
+  text-align: center;
   padding: 1rem;
   color: var(--white);
   text-decoration: none;
