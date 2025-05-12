@@ -23,8 +23,9 @@ body {
   max-width: 120rem;
   margin: 0 auto;
 }
-.main-nav {
-}
 .nav-bg {
   background-color: var(--secondary);
+}
+.main-nav a{
+  background-color: var(--primary);
 }
