@@ -26,6 +26,10 @@ body {
 .nav-bg {
   background-color: var(--secondary);
 }
-.main-nav a{
-  background-color: var(--primary);
+.main-nav {
+  padding: 1rem;
+}
+.main-nav a {
+  color: var(--white);
+  text-decoration: none;
 }
