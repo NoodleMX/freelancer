@@ -1,3 +1,4 @@
+/* Custom Properties */
 :root {
   --white: #ffffff;
   --black: #212121;
@@ -5,9 +6,11 @@
   --secondary: #0097a7;
   --grey: #757575;
 }
+
+/* Global Styles */
 html {
   font-size: 62.5%; /* 1rem = 10px */
-  box-sizing: border-box;
+  box-sizing: border-box; /* Box model hack */
 }
 *,
 *:before,
@@ -17,23 +20,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Krub", sans-serif;
-}
-h1 {
-  font-size: 3.8rem;
-}
-h2 {
-  font-size: 2.8rem;
-}
-h3 {
-  font-size: 1.8rem;
-}
-h1,
-h2,
-h3 {
-  text-align: center;
-}
-.title span {
-  font-size: 2rem;
 }
 .container {
   max-width: 120rem;
@@ -48,7 +34,7 @@ h3 {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   width: 90%;
   text-align: center;
 }
@@ -56,8 +42,30 @@ h3 {
   .button {
     width: auto;
   }
-  
 }
+
+/* Typography */
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+/* Titles */
+.title span {
+  font-size: 2rem;
+}
+
+/* Main Navigation */
 .nav-bg {
   background-color: var(--secondary);
 }
@@ -84,6 +92,8 @@ h3 {
   background-color: var(--primary);
   color: var(--black);
 }
+
+/* Hero Section */
 .hero {
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
@@ -105,7 +115,7 @@ h3 {
 .hero-content p {
   color: var(--white);
 }
-.location {
+.hero-content .location {
   display: flex;
   align-items: flex-end;
 }

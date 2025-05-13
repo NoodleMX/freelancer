@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abel Beltrán - Freelancer</title>
+    <!-- Styles -->
     <link rel="preload" href="./css/normalize.css" as="style" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,10 +13,13 @@
     <link rel="preload" href="./css/styles.css" as="style" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header>
       <h1 class="title">Abel Beltrán <span>Freelancer</span></h1>
     </header>
+
+    <!-- Navigation -->
     <div class="nav-bg">
       <nav class="main-nav container">
         <a href="#">Home</a>
@@ -24,6 +28,8 @@
         <a href="#">Contact</a>
       </nav>
     </div>
+
+    <!-- Hero -->
     <section class="hero">
       <div class="hero-content">
         <h2>Freelancer Design & Web Development</h2>
@@ -38,8 +44,11 @@
         <a class="button" href="#">Contact</a>
       </div>
     </section>
+
     <main>
       <h2>My Services</h2>
+
+      <!-- Web Design -->
       <section>
         <h3>Web Design</h3>
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-palette">
@@ -51,6 +60,8 @@
         </svg>
         <p>Creating stunning, responsive websites that perfectly balance aesthetics and functionality. Specializing in modern design principles, SEO optimization, and cross-browser compatibility to ensure your online presence stands out.</p>
       </section>
+
+      <!-- Mobile Apps -->
       <section>
         <h3>Mobile Apps</h3>
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-android">
@@ -70,6 +81,8 @@
         </svg>
         <p>Developing innovative mobile applications for iOS and Android platforms. From concept to deployment, I create user-friendly apps that deliver exceptional performance and engaging user experiences.</p>
       </section>
+
+      <!-- E-Commerce -->
       <section>
         <h3>E-Commerce</h3>
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-credit-card">
@@ -81,27 +94,34 @@
         </svg>
         <p>Building secure and scalable online stores that drive sales. Implementing payment gateways, inventory management systems, and optimized checkout processes to help your business thrive in the digital marketplace.</p>
       </section>
+
+      <!-- Form -->
       <section>
         <h2>Contact</h2>
         <form>
           <fieldset>
             <legend>Contact me by filling out all the fields</legend>
+
             <div>
               <label for="name">Name</label>
               <input type="text" id="name" name="name" required placeholder="Enter your full name" />
             </div>
+
             <div>
               <label for="telephone">Telephone</label>
               <input type="tel" id="telephone" name="telephone" required placeholder="Enter your telephone number" />
             </div>
+
             <div>
               <label for="email">Email</label>
               <input type="email" id="email" name="email" required placeholder="Enter your email address" />
             </div>
+
             <div>
               <label for="message">Message</label>
               <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
             </div>
+
             <div>
               <input type="submit" value="Send" />
             </div>
