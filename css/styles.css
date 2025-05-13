@@ -5,6 +5,7 @@
   --primary: #ffc107;
   --secondary: #0097a7;
   --grey: #757575;
+  --light-grey: #dfe9f3;
 }
 
 /* Global Styles */
@@ -20,6 +21,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Krub", sans-serif;
+  background-image: linear-gradient(to top, var(--light-grey) 0%, var(--white) 100%);
 }
 .container {
   max-width: 120rem;
