@@ -12,6 +12,14 @@
 html {
   font-size: 62.5%; /* 1rem = 10px */
   box-sizing: border-box; /* Box model hack */
+  scroll-snap-type: y mandatory; /* Enable scroll snapping */
+}
+/* Scroll Snapping */
+.services,
+.main-nav,
+.form {
+  scroll-snap-align: center; /* Align to the center of the viewport */
+  scroll-snap-stop: always; /* Always snap to this section */
 }
 *,
 *:before,
