@@ -39,11 +39,15 @@ body {
   border-radius: 0.5rem;
   width: 90%;
   text-align: center;
+  border: none;
 }
 @media (min-width: 768px) {
   .button {
     width: auto;
   }
+}
+.button:hover {
+  cursor: pointer;
 }
 .shadow {
   box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
@@ -71,6 +75,22 @@ h3 {
 /* Titles */
 .title span {
   font-size: 2rem;
+}
+
+/* Utilities */
+.w-sm-100 {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.align-right {
+  justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  .w-sm-100 {
+    width: auto;
+  }
 }
 
 /* Main Navigation */
@@ -143,7 +163,6 @@ h3 {
 .service h3 {
   color: var(--secondary);
   font-weight: normal;
-
 }
 .service p {
   line-height: 2;
@@ -177,4 +196,21 @@ h3 {
   font-weight: bold;
   margin-bottom: 2rem;
   color: var(--primary);
+}
+.fields-container {
+}
+.field {
+  margin-bottom: 1rem;
+}
+.field label {
+  color: var(--white);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.form-input {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
 }
