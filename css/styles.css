@@ -27,11 +27,17 @@ body {
   background-color: var(--secondary-color);
 }
 .main-nav {
-  padding: 1rem;
   display: flex;
   justify-content: space-between;
 }
 .main-nav a {
+  padding: 1rem;
   color: var(--white);
   text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.main-nav a:hover {
+  background-color: var(--primary-color);
+  color: var(--black);
 }
