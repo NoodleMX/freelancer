@@ -1,3 +1,10 @@
+:root {
+  --white: #ffffff;
+  --black: #212121;
+  --grey: #757575;
+  --primary-color: #ffc107;
+  --secondary-color: #0097a7;
+}
 html {
   font-size: 62.5%; /* 1rem = 10px */
 }
