@@ -5,6 +5,7 @@
   --white: #ffffff;
   --black: #212121;
   --grey: #757575;
+  --light-grey: #dfe9f3;
   --primary-color: #ffc107;
   --secondary-color: #0097a7;
 }
@@ -24,6 +25,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Krub", sans-serif;
+  background-image: linear-gradient(to top, var(--light-grey), var(--white) 100%);
 }
 
 /* =========================
@@ -76,6 +78,12 @@ h3 {
     width: auto;
   }
 }
+.shadow {
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.48);
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+}
 
 /* =========================
   Navigation Bar
@@ -116,6 +124,7 @@ h3 {
   background-size: cover;
   height: 45rem;
   position: relative;
+  margin-bottom: 2rem;
 }
 .hero-content {
   position: absolute;
