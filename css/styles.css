@@ -72,11 +72,15 @@ h3 {
   border-radius: 0.5rem;
   width: 90%;
   text-align: center;
+  border: none;
 }
 @media (min-width: 768px) {
   .button {
     width: auto;
   }
+}
+.button:hover {
+  cursor: pointer;
 }
 .shadow {
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.48);
@@ -85,6 +89,20 @@ h3 {
   border-radius: 1rem;
 }
 
+.w-sm-100 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .w-sm-100 {
+    width: auto;
+  }
+}
+.flex {
+  display: flex;
+}
+.align-right {
+  justify-content: flex-end;
+}
 /* =========================
   Navigation Bar
 ========================= */
@@ -190,4 +208,19 @@ h3 {
   font-weight: 700;
   margin-bottom: 2rem;
   color: var(--primary-color);
+}
+.field {
+  margin-bottom: 1rem;
+}
+.field label {
+  color: var(--white);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
 }
