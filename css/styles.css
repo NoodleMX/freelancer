@@ -16,7 +16,7 @@
 html {
   font-size: 62.5%; /* 1rem = 10px */
   box-sizing: border-box;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory; /* Enables vertical scroll snapping */
 }
 .main-nav,
 .services,
@@ -89,13 +89,16 @@ h3 {
 .button:hover {
   cursor: pointer;
 }
+
+/* =========================
+  Utility Classes
+========================= */
 .shadow {
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.48);
   background-color: var(--white);
   padding: 2rem;
   border-radius: 1rem;
 }
-
 .w-sm-100 {
   width: 100%;
 }
@@ -110,6 +113,7 @@ h3 {
 .align-right {
   justify-content: flex-end;
 }
+
 /* =========================
   Navigation Bar
 ========================= */
@@ -169,6 +173,10 @@ h3 {
   display: flex;
   align-items: flex-end;
 }
+
+/* =========================
+  Services Section
+========================= */
 @media (min-width: 768px) {
   .services {
     display: grid;
@@ -198,6 +206,10 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
 }
+
+/* =========================
+  Contact Form Section
+========================= */
 .form {
   background-color: var(--grey);
   width: min(60rem, 100%);
@@ -246,6 +258,10 @@ h3 {
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
+
+/* =========================
+  Footer
+========================= */
 .footer {
   text-align: center;
 }
