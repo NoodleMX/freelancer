@@ -1,0 +1,51 @@
+/* Custom Properties */
+:root {
+  --white: #ffffff;
+  --black: #212121;
+  --primary-color: #ffc107;
+  --secondary-color: #0097a7;
+  --grey: #757575;
+  --light-grey: #dfe9f3;
+}
+
+/* Global Styles */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Krub", sans-serif;
+  background-image: linear-gradient(to top, var(--light-grey) 0%, var(--white) 100%);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* Typography */
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
