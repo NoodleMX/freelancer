@@ -49,3 +49,8 @@ h2,
 h3 {
   text-align: center;
 }
+
+/* Header */
+.header__title--small {
+  font-size: 2rem;
+}
