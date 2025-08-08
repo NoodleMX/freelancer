@@ -4,7 +4,7 @@
   --black: #1c1c1c;
   --primary-color: #ffc107;
   --secondary-color: #006064;
-  --grey: #616161;
+  --grey: #545454;
   --light-grey: #f5f5f5;
 }
 
@@ -12,6 +12,15 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-snap-type: y mandatory;
+}
+
+/* Scroll Snap */
+.services,
+.nav,
+.form {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 *,
