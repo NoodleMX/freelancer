@@ -116,7 +116,7 @@ h3 {
 
 /* Hero Sectio */
 .hero {
-  background-image: url("../img/hero.jpg");
+  background-image: url("../img/hero.webp");
   height: 45rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,4 +173,15 @@ h3 {
   line-height: 2;
 }
 
-/* Contact */
+/* Contact Form*/
+.form {
+  background-color: var(--grey);
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.form__fieldset {
+  border: none;
+}
