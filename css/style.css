@@ -1,0 +1,264 @@
+/* Custom Properties */
+:root {
+  --white: #ffffff;
+  --black: #1c1c1c;
+  --primary-color: #ffc107;
+  --secondary-color: #006064;
+  --grey: #545454;
+  --light-grey: #f5f5f5;
+}
+
+/* Global Styles */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-snap-type: y mandatory;
+}
+
+/* Scroll Snap */
+.services,
+.nav,
+.form {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Krub", sans-serif;
+  background-image: linear-gradient(to top, var(--light-grey) 0%, var(--white) 100%);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.button {
+  margin-top: 3rem;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-align: center;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: auto;
+  }
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.shadow {
+  box-shadow: 0rem 0.5rem 1.5rem rgba(112, 112, 112, 0.48);
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/* Typography */
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+/* Utilities */
+.w-sm-100 {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .w-sm-100 {
+    width: auto;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.align-right {
+  justify-content: flex-end;
+}
+
+/* Header */
+.header__title--small {
+  font-size: 2rem;
+}
+
+/* Nav Bar */
+.nav-bg {
+  background-color: var(--secondary-color);
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.nav__link {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+}
+
+.nav__link:hover {
+  background-color: var(--primary-color);
+  color: var(--black);
+}
+
+/* Hero Sectio */
+.hero {
+  background-image: url("../img/hero.webp");
+  height: 45rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--white);
+}
+
+.hero-content__location {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Services */
+@media (min-width: 768px) {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service__title {
+  color: var(--secondary-color);
+  font-weight: normal;
+}
+
+.service__icons {
+  background-color: var(--primary-color);
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.service__text {
+  text-align: center;
+  line-height: 2;
+}
+
+/* Contact Form*/
+.form {
+  background-color: var(--grey);
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__legend {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .fields-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+  .form-field:nth-child(3),
+  .form-field:nth-child(4) {
+    grid-column: 1 / 3;
+  }
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-field__label {
+  display: block;
+  color: var(--white);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.form-field__input {
+  background-color: var(--white);
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.form-field__input--textarea {
+  height: 20rem;
+}
+
+/* Footer */
+.footer__text {
+  text-align: center;
+}
